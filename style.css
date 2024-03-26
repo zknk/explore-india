@@ -115,8 +115,12 @@ video{
     font-weight: 900;
     position: relative;
     color: ;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
 }
-
+.char{
+    transform: translateY(115px);
+    transition: transform .5s;
+}
 .hidden-mobile {
     display: block;
     text-align: center;
