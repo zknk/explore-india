@@ -1,0 +1,225 @@
+html,body{
+    height: 100%;
+    width: 100%;
+    /* --color1: #FFF ; */
+    --color2: #000000 ;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+  /* font-weight: 500; */
+  font-style: normal;
+    /* color: #fff; */
+
+  }
+ 
+  .nav-bar {
+    height: 130px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    position: fixed;
+    font-weight: 300;
+    padding: 12px 20px;
+    z-index: 999;
+    color: white;
+    
+}
+.logo img {height: 300px;
+margin-left: -150px;}
+.menu {display: flex;
+}
+.menu li {padding-left: 30px;}
+.menu li a {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--color1);
+    text-align: center;
+    transition: 0.15s ease-in-out;
+    position: relative;
+    text-transform: uppercase;
+}
+.menu li a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: var(--color1);
+    transition: 0.15s ease-in-out;
+}
+.menu li a:hover:after {width: 100%;}
+.open-menu , .close-menu {
+    position: absolute;
+    color: var(--color1);
+    cursor: pointer;
+    font-size: 1.5rem;
+    display: none;
+}
+.open-menu {
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+.close-menu {
+    top: 20px;
+    right: 20px;
+}
+#check {display: none;}
+@media(max-width: 610px){
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 100;
+        background-color: var(--color2);
+        transition: all 0.2s ease-in-out;
+    }
+    .menu li {margin-top: 40px;}
+    .menu li a {padding: 10px;}
+    .open-menu , .close-menu {display: block;}
+    #check:checked ~ .menu {right: 0;}
+}
+video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    /* position: fixed; */
+    z-index: -1;
+}
+#main{
+     /* position: relative; */
+     background-color: rgba(0, 0, 0, 0.333);
+}
+#page1 {
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#page1 h1 {
+    font-size: 6vw;
+    font-weight: 900;
+    position: relative;
+    color:white;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+.char{
+    transform: translateY(115px);
+    transition: transform .5s;
+}
+.hidden-mobile {
+    display: block;
+    text-align: center;
+    width: 60%;
+}
+
+@media (max-width: 610px) {
+    .hidden-mobile {
+        display: none;
+    }
+    #page1 h1{
+        font-size: ;
+    }
+}
+#page2{
+    height: 100vh;
+    width: 100%;
+    /* background-color:#FEFAE0 ; */
+    position:absolute;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+
+#page2 h1{
+   margin-bottom: 10px;;
+}
+
+
+/* carousel-css */
+
+
+.carousel-container {
+    width: 68.5%;
+    /* border: 1px solid black; */
+    overflow: hidden;
+    height:70%;
+    position:relative;
+    top:100px
+
+    
+  }
+  
+  .carousel-wrapper {
+    display: flex;
+    padding-top:5px;
+    transition: transform 1s ease;
+    
+  }
+  
+  .carousel-slide {
+    display: flex;
+    padding:10px;
+    /* border: 1px solid black; */
+  }
+  
+  .carousel-content {
+    width: 300px; /* Adjust width as needed */
+    flex-shrink: 0;
+    margin: 20px ;
+    height:400px;
+    padding:15px;
+    border: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    border-radius:20px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  }
+  .carousel-content img{
+    height: 220px;
+
+    width:220px;
+    /* margin-bottom: 40px;; */
+    position: absolute;
+    top:-35px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+
+    
+  }
+  .carousel-content h4{
+    margin: 100px 0 0 0 ;
+    font-size:4vh;
+  }
+
+#page2 button{
+    height: 20px;
+    position: absolute;
+
+}
+
+  
+  
