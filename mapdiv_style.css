@@ -1,0 +1,95 @@
+#page4{
+    background: url("bg_img.jpg") center no-repeat ;
+    height:100%;
+    background-size: cover;
+    
+    
+    gap:50px;
+
+}
+
+.mapdiv1 path{
+          fill:white;
+          stroke: rgb(0, 0, 0);
+          stroke-width:.3px;
+          transition: fill 0.1s;
+}
+      
+.mapdiv1 path:hover {
+   fill:#fa9121;
+}
+/* .mapdiv1 .mh {
+    fill:#fa9121;
+ } */
+    
+.map-content-parent{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    width:80%;
+    margin:auto;
+}
+.map-content{
+    display: flex;
+    justify-content:space-between;
+    margin:0;
+    gap:20px;
+    align-items: center;
+    flex-wrap: wrap;
+   
+}
+.mapdiv{
+    height:500px;
+    width:350px;
+    /* border: 1px solid black; */
+    border-radius: 8px;  
+    background-color: WHITE;  
+}
+
+.india-map{
+    height:680px;
+    width:600px;
+    /* background-color: white; */
+    border-radius: 8px; ;
+}
+
+.header{
+    font-size: 2.5rem;
+    color:rgb(13, 1, 20);
+    font-weight: 800; 
+    padding-top:2rem;
+    padding-bottom: 1.5rem;
+    padding-left:2rem;
+
+}
+
+.state-image img{
+    width:80%;
+    margin-top: 2rem;
+    margin-left:2.2rem;
+    border-radius: 4%;;
+    
+}
+.content{
+    padding-left:2rem;
+    padding-right: 2rem;
+    font-size:1rem;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+.map-content-parent h1{
+    color: white;
+    font-size:3rem;
+}
+
+@media (max-width:600px){
+    .map-content{
+        margin-left:50px;
+        justify-content: center;
+        align-items: center;
+        gap:200px;
+    }
+    .india-map{
+        display: none;
+    }
+}
+

@@ -1,0 +1,181 @@
+
+.footer{
+    margin: 0;
+    padding-left: 50px;
+    background-color:#17406c;
+    color: rgb(213, 210, 210);
+    width:100%;
+    max-height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;    
+}
+h5{
+    text-decoration: underline;
+    font-size: 20px;
+    padding: 0;
+    margin: .5rem;
+    margin-top: 0;
+    margin-left: 0;
+    /* padding: 10px; */
+}
+.container{
+    
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 5rem;
+    
+    gap: 7rem;
+    flex-wrap: wrap;
+    font-size:.8rem ;
+    /* padding-bottom:; */
+}
+.col1{
+    max-height: fit-content;
+    width:35vw;
+    height:300px;
+    padding-top:2rem;
+    /* background-color: antiquewhite; */
+    min-width: 400px;
+    
+}
+.col2{
+    height: 300px;
+    width:20vw;
+   
+    /* background-color: rgb(93, 77, 55); */
+}
+.col3{
+    height: 300px;
+    width:18vw;
+    
+    padding-top: 2rem;
+    /* background-color: rgb(52, 49, 46); */
+}
+.state-tourism{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+.col2 h5{
+    margin-top: 2rem;
+}
+
+
+li{
+    list-style: none;
+    padding:0;
+}
+a{ color: rgb(213, 210, 210);
+    text-decoration: none;
+}
+
+.social-media-section{
+    display:flex;
+    gap:2rem;
+    font-size: 25px;
+    flex-wrap: wrap;;
+    
+
+}
+.social-icon{
+    margin:0;
+    padding-top:8px;
+    
+}
+.social-icon i {
+    color: rgb(200, 198, 198);;
+    
+    
+}
+
+.bio{
+    padding:0  5rem;
+    font-size:15px;
+    margin-top:0rem;
+    
+    
+}
+.bio p {
+    font-size: 0.9rem;
+    padding-bottom: 1rem;
+}
+
+/* body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: #fff;
+} */
+
+.copyright{
+    text-align: center;
+    /* padding-bottom: 1.5rem ;*/
+    padding-top: .5rem;; 
+    
+}
+.copyright i{
+    font: 100;
+}
+
+@media (min-width:2400px){
+    .container{
+        gap:10rem;
+        max-width: cover;
+    }
+    
+}
+@media (max-width:722px){
+    .footer{
+        margin-left:0;
+        padding-left:0;
+    }
+    .bio h1{
+        margin-top: 8rem;
+    }
+    .container{
+        width:fit-content;
+    }
+    h5{
+        margin: 0rem;
+    }
+    .col1{
+        width:fit-content;
+    }
+    .col2{
+        padding-top:0;
+    }
+    .col2{
+        padding-top: 0;
+    }
+    .bio {
+       display:none; 
+    }
+    .state-tourism{
+        /* justify-content: center; */
+        gap:50px;
+        justify-content: flex-start;
+        width:fit-content;
+    }
+    .state3{
+       display: none;
+    }
+    .social-media-section{
+        gap:4px;
+        flex-wrap: nowrap;
+
+    }
+    .footer{
+        height:100vh;
+    }
+
+}
+
