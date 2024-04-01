@@ -146,7 +146,7 @@ video{
     }
 }
 #page2{
-    height: 100vh;
+    height: 95vh;
     width: 100%;
     /* background-color:#FEFAE0 ; */
     /* position:absolute; */
@@ -167,7 +167,7 @@ video{
 
 
 .carousel-container {
-    width: 68.5%;
+    width: 90%;
     /* border: 1px solid black; */
     overflow: hidden;
     height:70%;
@@ -223,15 +223,18 @@ video{
     font-size:4vh;
   }
 
-#page2 button{
+/* #page2 button{
     height: 20px;
     position: absolute;
 
-}
+} */
 
 @media (max-width:500px){
     .carousel-content{
         width:280px;
+    }
+    #page2{
+        height: 75vh;
     }
   /* #page4{
     width: fit-content  ;

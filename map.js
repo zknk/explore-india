@@ -191,8 +191,28 @@ const indianStatesAndUTsTourism = [
 console.log(indianStatesAndUTsTourism.length);
 
 const stateElements = document.querySelectorAll('path'); // Assuming you've used div elements to represent states
+stateElements[19].classList.add('active');
 stateElements.forEach(element => {
-    element.addEventListener('click', handleStateClick);
+    
+    element.addEventListener('click', function handleStateClick(event) {
+        const clickedId = event.target.id; // Get the ID of the clicked element
+        let index=Number.parseInt(clickedId);
+        // console.log(event);
+        // console.log(index);
+        // console.log(indianStatesAndUTsTourism[index-1].title);
+        // console.log(indianStatesAndUTsTourism[index-1].description);
+        const  head=document.getElementById('head').innerHTML=indianStatesAndUTsTourism[index-1].title;
+        const  content=document.getElementById('content').innerHTML=indianStatesAndUTsTourism[index-1].description;
+        const img=document.getElementById('state-image');
+        
+        img.src="./states_ut/" + clickedId+ ".jpg";
+        stateElements.forEach(function(d) {
+            d.classList.remove('active');
+          });
+          element.classList.add('active');
+    
+    });
+     
 });
 
 // stateElements[20].path.fill="#fa9121";
@@ -211,20 +231,26 @@ const  head=document.getElementById('head').innerHTML=indianStatesAndUTsTourism[
     const img=document.getElementById('state-image');
     
     img.src="./states_ut/" + "20"+ ".jpg";
+    
 //    const col = document.getElementById('20').color='#fa9121';
 //    console.log(col); 
 
 
-function handleStateClick(event) {
-    const clickedId = event.target.id; // Get the ID of the clicked element
-    let index=Number.parseInt(clickedId);
-    console.log(index);
-    console.log(indianStatesAndUTsTourism[index-1].title);
-    console.log(indianStatesAndUTsTourism[index-1].description);
-    const  head=document.getElementById('head').innerHTML=indianStatesAndUTsTourism[index-1].title;
-    const  content=document.getElementById('content').innerHTML=indianStatesAndUTsTourism[index-1].description;
-    const img=document.getElementById('state-image');
+// function handleStateClick(event) {
+//     const clickedId = event.target.id; // Get the ID of the clicked element
+//     let index=Number.parseInt(clickedId);
+//     // console.log(event);
+//     // console.log(index);
+//     // console.log(indianStatesAndUTsTourism[index-1].title);
+//     // console.log(indianStatesAndUTsTourism[index-1].description);
+//     const  head=document.getElementById('head').innerHTML=indianStatesAndUTsTourism[index-1].title;
+//     const  content=document.getElementById('content').innerHTML=indianStatesAndUTsTourism[index-1].description;
+//     const img=document.getElementById('state-image');
     
-    img.src="./states_ut/" + clickedId+ ".jpg";
+//     img.src="./states_ut/" + clickedId+ ".jpg";
+//     stateElements.forEach(function(d) {
+//         d.classList.remove('active');
+//       });
+//       element.classList.add('active');
 
-}
+// }

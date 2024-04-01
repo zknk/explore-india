@@ -18,6 +18,9 @@
 .mapdiv1 path:hover {
    fill:#fa9121;
 }
+.mapdiv1  .active{
+    fill:#fa9121;
+}
 /* .mapdiv1 .mh {
     fill:#fa9121;
  } */
@@ -87,6 +90,7 @@
         justify-content: center;
         align-items: center;
         gap:200px;
+        margin: 0;
     }
     .india-map{
         display: none;

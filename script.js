@@ -1,7 +1,7 @@
 gsap.to(".nav-bar",{
     backgroundColor:"#141414",
-    height:"90px",
-    duration:0.5,
+    height:"80px",
+    duration:0.1-,
     scrollTrigger:{
         // trigger:".header",
         // scroller:"body",

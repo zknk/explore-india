@@ -1,7 +1,7 @@
 
 .footer{
     margin: 0;
-    padding-left: 50px;
+    /* padding-left: 50px; */
     background-color:#17406c;
     color: rgb(213, 210, 210);
     width:100%;
@@ -14,7 +14,7 @@ h5{
     text-decoration: underline;
     font-size: 20px;
     padding: 0;
-    margin: .5rem;
+    margin: .5rem 0;
     margin-top: 0;
     margin-left: 0;
     /* padding: 10px; */
@@ -25,10 +25,11 @@ h5{
     display: flex;
     justify-content: center;
     align-items: center;
-    justify-content: flex-start;
-    padding-left: 5rem;
+    justify-content: center;
+    /* padding-left: 5rem; */
     
-    gap: 7rem;
+    /* gap: 7rem; */
+    gap: 1rem 5.4rem;
     flex-wrap: wrap;
     font-size:.8rem ;
     /* padding-bottom:; */
@@ -39,7 +40,7 @@ h5{
     height:300px;
     padding-top:2rem;
     /* background-color: antiquewhite; */
-    min-width: 400px;
+    /* min-width: 400px; */
     
 }
 .col2{
@@ -128,7 +129,7 @@ a{ color: rgb(213, 210, 210);
 
 @media (min-width:2400px){
     .container{
-        gap:10rem;
+        /* gap:10rem; */
         max-width: cover;
     }
     
@@ -161,7 +162,7 @@ a{ color: rgb(213, 210, 210);
     }
     .state-tourism{
         /* justify-content: center; */
-        gap:50px;
+        /* gap:50px; */
         justify-content: flex-start;
         width:fit-content;
     }
